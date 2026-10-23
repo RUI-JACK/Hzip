@@ -1,6 +1,6 @@
 # Hzip 中文安装包
 
-安装文件：`release/installer/Hzip-Setup-0.5.0-x64.exe`。用于 Windows x64，包含完整运行环境和解压引擎，无需额外安装 .NET。
+安装文件：`release/installer/Hzip-Setup-0.5.1-x64.exe`。用于 Windows x64，包含完整运行环境和解压引擎，无需额外安装 .NET。0.5.1 新增启动更新提醒，详见 [UPDATES.md](UPDATES.md)。
 
 安装包直接封装用户美化后的 `release/Hzip` 程序目录，不重新设计或修改应用的界面、布局、样式。默认安装到当前用户的 `%LOCALAPPDATA%\Programs\Hzip`，可另选目录，提供开始菜单和可选桌面快捷方式、Windows 已安装应用中的卸载入口。同版本可以重复安装。
 

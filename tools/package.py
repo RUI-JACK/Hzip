@@ -112,7 +112,7 @@ for pointer in ['conflict-latest.txt','conflict-ui-latest.txt']:
             else:conflict_ui_area=candidate
 if conflict_area:reports['extraction_conflicts']=json.loads((conflict_area/'results.json').read_text(encoding='utf-8-sig'))
 if (ROOT/'docs/EXTRACTION-CONFLICTS.md').exists():shutil.copy2(ROOT/'docs/EXTRACTION-CONFLICTS.md',APP/'EXTRACTION-CONFLICTS.md')
-for name in ['WINDOWS11-MENU.md','VERIFICATION.md','PAUSE-AND-REPAIR.md','DAILY-WORKFLOWS.md']:
+for name in ['WINDOWS11-MENU.md','VERIFICATION.md','PAUSE-AND-REPAIR.md','DAILY-WORKFLOWS.md','UPDATES.md']:
     shutil.copy2(ROOT/'docs'/name,APP/name)
 manifest=[]
 for p in sorted(APP.rglob('*')):

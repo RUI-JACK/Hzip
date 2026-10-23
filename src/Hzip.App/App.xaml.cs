@@ -18,6 +18,7 @@ public partial class App : Application
             return;
         }
         var window = new MainWindow(e.Args); MainWindow = window; window.Show();
+        await StartupUpdateNotifier.OnStartupAsync(window);
     }
     private void Application_Error(object sender, DispatcherUnhandledExceptionEventArgs e)
     {

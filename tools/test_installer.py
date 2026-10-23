@@ -5,7 +5,9 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 WORK = pathlib.Path((ROOT / "verification/installer-latest.txt").read_text(encoding="utf-8-sig").strip())
 AREA = WORK / ("run-" + uuid.uuid4().hex[:8]); AREA.mkdir()
 (WORK / "test-run-latest.txt").write_text(str(AREA), encoding="utf-8")
-SETUP = ROOT / "release/installer/Hzip-Setup-0.5.0-x64.exe"
+import xml.etree.ElementTree as ET
+VERSION = ET.parse(ROOT / "Directory.Build.props").findtext(".//Version")
+SETUP = ROOT / f"release/installer/Hzip-Setup-{VERSION}-x64.exe"
 APP = AREA / "安装测试 Hzip"
 assert not APP.exists(), "Use a new test directory"
 ENV = os.environ.copy(); ENV["HZIP_DATA_DIR"] = str(AREA / "runtime-profile"); ENV.pop("HZIP_ENGINE", None)
@@ -103,7 +105,7 @@ try:
     p = subprocess.Popen([str(APP / "Hzip.exe")], env=ENV)
     def loaded():
         try: return any(x["Id"] == "HomeButton" for x in json.loads(ui(p.pid, "list")))
-        except AssertionError: return False
+        except (AssertionError, json.JSONDecodeError): return False
     wait(loaded); ui(p.pid, "screenshot", OutputPath=AREA / "installed-home.png"); ui(p.pid, "close"); assert p.wait(timeout=10) == 0
     passed("Installed beautified GUI starts without any global .NET runtime")
     source = AREA / "说明.txt"; source.write_text("Hzip 安装包真实压缩解压验证", encoding="utf-8")
@@ -119,7 +121,7 @@ try:
     p = subprocess.Popen([str(APP / "Hzip.exe"), "--extract-direct", str(archive)], env=ENV)
     def conflict():
         try: return any(x["Id"] == "ConflictRename" for x in json.loads(ui(p.pid, "list")))
-        except AssertionError: return False
+        except (AssertionError, json.JSONDecodeError): return False
     wait(conflict); ui(p.pid, "screenshot", OutputPath=AREA / "installed-conflict.png"); ui(p.pid, "invoke", Id="ConflictRename")
     def complete():
         for path in (AREA / "runtime-profile/ShellJobs").glob("*.json"):

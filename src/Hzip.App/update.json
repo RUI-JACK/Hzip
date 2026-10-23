@@ -4,5 +4,5 @@
   "latestReleaseApi": "https://api.github.com/repos/RUI-JACK/Hzip/releases/latest",
   "installerUrl": "https://github.com/RUI-JACK/Hzip/releases/latest/download/Hzip-Setup-x64.exe",
   "portableUrl": "https://github.com/RUI-JACK/Hzip/releases/latest/download/Hzip-Windows-x64.zip",
-  "updateMode": "manual"
+  "updateMode": "startup-notify"
 }

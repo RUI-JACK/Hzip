@@ -9,7 +9,7 @@ Windows 原生压缩文件管理器。解压整个程序包后，双击 **Hzip.e
 - [Windows x64 便携版](https://github.com/RUI-JACK/Hzip/releases/latest/download/Hzip-Windows-x64.zip)
 - [问题反馈](https://github.com/RUI-JACK/Hzip/issues)
 
-项目更新地址固定为 `https://github.com/RUI-JACK/Hzip/releases/latest`，安装包的 Windows 更新信息也使用该地址。程序包内 `update.json` 记录发布页、最新版本 API 和下载地址。当前采用手动下载安装更新，不会在后台自动替换程序。升级或移动安装位置后，按需重新启用右键菜单。
+项目更新地址固定为 `https://github.com/RUI-JACK/Hzip/releases/latest`，安装包的 Windows 更新信息也使用该地址。程序包内 `update.json` 记录发布页、最新版本 API 和下载地址。从 0.5.1 起，打开主界面后会在后台检查 GitHub 正式版，每天最多一次；发现新版时提示下载，可稍后提醒或跳过该版本。右键压缩、解压时不检查更新；断网或检查失败时不打扰使用。点击下载会打开浏览器，完成任务并退出 Hzip 后再安装，不会自动替换程序。升级或移动安装位置后，按需重新启用右键菜单。
 
 ## 使用
 
@@ -43,7 +43,7 @@ Windows 原生压缩文件管理器。解压整个程序包后，双击 **Hzip.e
 
 ## 数据与卸载
 
-设置、最近记录和 Windows 账户加密的密码库保存在 `%LOCALAPPDATA%\Hzip`；任务暂存文件在其 Temp 子目录。密码库受当前 Windows 账户保护，复制程序文件不会自动迁移密码。归档与预览文件在本机处理，应用未实现账户、广告或遥测上传。
+设置、最近记录、更新提醒记录和 Windows 账户加密的密码库保存在 `%LOCALAPPDATA%\Hzip`；任务暂存文件在其 Temp 子目录。密码库受当前 Windows 账户保护，复制程序文件不会自动迁移密码。归档与预览文件在本机处理，应用未实现账户、广告或遥测上传。更新检查只请求公开的 GitHub Release 信息，不发送归档内容或文件路径。
 
 移动程序后需重新启用已使用的右键菜单来更新路径。删除程序前，可在设置中分别移除已启用的新版和经典菜单，再删除程序文件夹。新版菜单移除时也会清理本次安装添加的证书信任。需要清除使用记录或密码时，另行处理上述用户数据目录；Recovery 子目录中若有未恢复的文件，请先处理备份。
 
