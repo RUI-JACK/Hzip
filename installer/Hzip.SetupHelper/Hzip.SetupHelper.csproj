@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0-windows</TargetFramework><AssemblyName>Hzip.SetupHelper</AssemblyName></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../src/Hzip.Core/Hzip.Core.csproj" /></ItemGroup>
+</Project>

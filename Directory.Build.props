@@ -1,0 +1,20 @@
+﻿<Project>
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Hzip.Ui.Tests'">
+    <BaseIntermediateOutputPath>obj\ui\</BaseIntermediateOutputPath>
+    <BaseOutputPath>bin\ui\</BaseOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Deterministic>true</Deterministic>
+    <Version>0.5.0</Version>
+    <RepositoryUrl>https://github.com/RUI-JACK/Hzip</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/RUI-JACK/Hzip</PackageProjectUrl>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <Authors>Hzip contributors</Authors>
+    <Company>Hzip</Company>
+    <Copyright>Copyright © 2026 Hzip contributors</Copyright>
+  </PropertyGroup>
+</Project>

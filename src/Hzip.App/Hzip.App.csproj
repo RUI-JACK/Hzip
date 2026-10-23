@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework><UseWPF>true</UseWPF>
+    <AssemblyName>Hzip</AssemblyName><RootNamespace>Hzip.App</RootNamespace><ApplicationIcon>Assets/Hzip.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="../Hzip.Core/Hzip.Core.csproj" /></ItemGroup>
+  <ItemGroup><Resource Include="Assets/Hzip.png" /><Resource Include="Assets/Hzip.ico" /></ItemGroup>
+  <ItemGroup><None Update="update.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" /></ItemGroup>
+</Project>

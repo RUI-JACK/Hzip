@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+  <TargetFramework>net8.0</TargetFramework><AssemblyName>Hzip.ZipCodec</AssemblyName><Version>1.4.2.14</Version>
+  <Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings><EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  <Authors>SharpZipLib contributors; Hzip compatibility patch</Authors>
+  <Copyright>Copyright (c) SharpZipLib contributors; Hzip compatibility extension 2026</Copyright>
+  <NoWarn>$(NoWarn);SYSLIB0051;SYSLIB0050;SYSLIB0041;SYSLIB0021;CS0618;CS0672</NoWarn>
+ </PropertyGroup>
+ <ItemGroup><Compile Include="../../vendor/sharpziplib-source/SharpZipLib-1.4.2/src/ICSharpCode.SharpZipLib/**/*.cs" Exclude="../../vendor/sharpziplib-source/**/obj/**;../../vendor/sharpziplib-source/**/bin/**;../../vendor/sharpziplib-source/**/AssemblyInfo.cs"/><Compile Include="ZipPasswordEncodingScope.cs"/></ItemGroup>
+</Project>

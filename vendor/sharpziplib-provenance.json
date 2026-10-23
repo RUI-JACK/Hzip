@@ -1,0 +1,6 @@
+{
+  "version": "1.4.2",
+  "package_url": "https://api.nuget.org/v3-flatcontainer/sharpziplib/1.4.2/sharpziplib.1.4.2.nupkg",
+  "sha256": "fe0895aa2930a2b1b65caa9f37db8bca35125ebdf9cc1b99d855f6afc5ff5946",
+  "source": "https://github.com/icsharpcode/SharpZipLib/tree/v1.4.2"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "file": "test_read_format_rar.rar",
+    "url": "https://raw.githubusercontent.com/libarchive/libarchive/master/libarchive/test/test_read_format_rar.rar.uu",
+    "sha256": "d421b86f6290aefad61b2a36737253b2b30fe27c156bd95abfc230f24fe0307e",
+    "bytes": 336
+  },
+  {
+    "file": "test_read_format_rar5.rar",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "test_read_format_rar5_compressed.rar",
+    "url": "https://raw.githubusercontent.com/libarchive/libarchive/master/libarchive/test/test_read_format_rar5_compressed.rar.uu",
+    "sha256": "68f9d7e2662cd5bc5607ba9c6bf1edbf121cf3b08011a7d8643091791750a7c8",
+    "bytes": 436
+  }
+]

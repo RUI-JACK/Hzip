@@ -1,0 +1,33 @@
+[
+  {
+    "archive": "python-store.zip",
+    "entry": "中文目录/日本語 😀.txt",
+    "sha256": "425f8a2982d9345967f14d09504c859c3c20e698e0f0c3ac37d439cf656edac2",
+    "archive_sha256": "2825346582cd60de0a19b4ee651b6db80e321efaafcb4d4697c2bf75439cc101"
+  },
+  {
+    "archive": "python-deflate.zip",
+    "entry": "中文目录/日本語 😀.txt",
+    "sha256": "425f8a2982d9345967f14d09504c859c3c20e698e0f0c3ac37d439cf656edac2",
+    "archive_sha256": "37203a9ac362f9f731c12e7be7c40ec103013ef0272c3e4aae51cc2f5552a2ed"
+  },
+  {
+    "archive": "python-bzip2.zip",
+    "entry": "中文目录/日本語 😀.txt",
+    "sha256": "425f8a2982d9345967f14d09504c859c3c20e698e0f0c3ac37d439cf656edac2",
+    "archive_sha256": "3522cc2c443fc8e7c8eb0082b5fd806e9a469327b771e74351c4a8b0d2f36e54"
+  },
+  {
+    "archive": "python-lzma.zip",
+    "entry": "中文目录/日本語 😀.txt",
+    "sha256": "425f8a2982d9345967f14d09504c859c3c20e698e0f0c3ac37d439cf656edac2",
+    "archive_sha256": "f2d068d600d81cb94a0e471056109a6f2b152c013b2ffe1dc30c0f6e650ea64a"
+  },
+  {
+    "archive": "oem437.zip",
+    "entry": "café.txt",
+    "code_page": 437,
+    "sha256": "425f8a2982d9345967f14d09504c859c3c20e698e0f0c3ac37d439cf656edac2",
+    "archive_sha256": "24a6b6d84c1dcaaf69e062f23fc0cf9d013450d66ad23b1ed83da25767ee3d39"
+  }
+]

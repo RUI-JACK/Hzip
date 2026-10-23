@@ -1,0 +1,4 @@
+LIBRARY Hzip.Shell
+EXPORTS
+ DllGetClassObject
+ DllCanUnloadNow

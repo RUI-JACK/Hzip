@@ -1,0 +1,4 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework><UseWPF>true</UseWPF><EnableDefaultCompileItems>false</EnableDefaultCompileItems><AssemblyName>Hzip.Ui.Tests</AssemblyName></PropertyGroup>
+  <ItemGroup><Compile Include="UiWorkflowTests.cs" /><Compile Include="LegacyZipFixture.cs" /><ProjectReference Include="../src/Hzip.App/Hzip.App.csproj" /></ItemGroup>
+</Project>

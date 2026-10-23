@@ -1,0 +1,23 @@
+{
+  "release": "https://github.com/ip7z/7zip/releases/tag/26.04",
+  "downloads": [
+    {
+      "url": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-x64.exe",
+      "filename": "7z2604-x64.exe",
+      "bytes": 1664082,
+      "sha256": "d54bf805f9f3704d1e8db2fa3498ae7ef2df0312b40b558e7c71c734430a665d"
+    },
+    {
+      "url": "https://github.com/ip7z/7zip/releases/download/26.04/7zr.exe",
+      "filename": "7zr.exe",
+      "bytes": 602624,
+      "sha256": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282"
+    },
+    {
+      "url": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-src.tar.xz",
+      "filename": "7z2604-src.tar.xz",
+      "bytes": 1560440,
+      "sha256": "9691944c0fe0d01bb49373a704fb983fd33bc98b1738695179dfbf99ac1734f6"
+    }
+  ]
+}
